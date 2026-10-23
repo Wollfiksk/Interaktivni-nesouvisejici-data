@@ -1,0 +1,14 @@
+ZÁVĚR ANALÝZY: TEPLOTA A TURISTICKÁ NÁVŠTĚVNOST
+
+Porovnání měsíční teploty a počtu ubytovaných hostů v Praze a Středočeském kraji společně ukázalo, že teplejší měsíce obvykle doprovází vyšší návštěvnost. Za období 2012 až 2025, po vynechání let 2020 a 2021 ovlivněných pandemií, dosahuje Pearsonův korelační koeficient hodnoty 0,741. Jde o silnou kladnou souvislost.
+
+Velká část této souvislosti ale odpovídá sezónnosti. V létě se současně zvyšuje teplota a probíhají prázdniny i hlavní turistická sezóna. Po odečtení průměrů stejných kalendářních měsíců v porovnávaném období klesla korelace odchylek na 0,149. Samotný rozdíl teplot mezi roky tedy vykazuje v tomto porovnání jen slabou kladnou souvislost s odchylkami návštěvnosti.
+
+Data potvrzují společný sezónní průběh teploty a návštěvnosti. Neumožňují však určit, jak velký příčinný dopad má samotná teplota. Návštěvnost ovlivňují také prázdniny, ceny, nabídka ubytování a další okolnosti. Výsledek platí pro uvedené společné území, období a metodu, nikoli automaticky pro všechny kraje.
+
+Výpočet odchylek: od teploty se odečte průměr teplot stejného kalendářního měsíce. Návštěvnost se vyjádří jako procentní odchylka od průměru návštěvnosti stejného měsíce. Průměry používají roky 2012 až 2025 bez let 2020 a 2021. Tato jednoduchá úprava neodstraňuje dlouhodobé trendy ani ostatní vlivy.
+
+Zdroje: Český hydrometeorologický ústav a Český statistický úřad, datové sady evidované na data.gov.cz. Přesné odkazy jsou v CTI_ME.txt a v aplikaci.
+
+ÚZEMNÍ VYMEZENÍ
+ČHMÚ v této datové sadě zveřejňuje teplotu společně pro Prahu a Středočeský kraj. Proto analýza sčítá návštěvnost obou krajů. Výsledek nelze označovat za výsledek samotné Prahy.

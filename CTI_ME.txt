@@ -1,0 +1,38 @@
+TURISTICKÁ NÁVŠTĚVNOST A DOPRAVNÍ NEHODY V KRAJÍCH ČR
+
+1. Rozbal celý ZIP a otevři složku analyza_kraju v terminálu.
+2. Nainstaluj knihovny:
+   python -m pip install -r requirements.txt
+3. Spusť aplikaci:
+   python -m streamlit run app.py
+4. Otevře se internetový prohlížeč. Pokud ne, použij http://localhost:8501.
+
+Vyžaduje Python 3.10 nebo novější. Ve Windows můžeš místo python použít py.
+Přibalená data umožňují první spuštění bez jejich stahování. Instalace knihoven vyžaduje internet.
+Tlačítko Stáhnout aktuální data obnoví zdrojové CSV, přenos má přibližně 70 MB.
+Grafy podporují přiblížení, zobrazení hodnot po najetí a export obrázku.
+Kliknutím na položku legendy ji skryješ, dvojklikem ji zobrazíš samostatně.
+
+SOUBORY
+app.py: interaktivní aplikace Streamlit s grafy Plotly.
+data_processing.py: filtry, kontrola duplicit, úplnost měsíců, spojení dat.
+requirements.txt: potřebné knihovny.
+data/: skutečné původní CSV stažené z distribučních odkazů katalogu data.gov.cz.
+
+METODIKA
+Pouze krajské součty nehod, bez okresů a celostátního součtu.
+Návštěvnost pouze za rezidenci celkem (0), HUZ celkem (1).
+Hosté a přenocování se sčítají zvlášť za 12 měsíců.
+Chybějící data se nenahrazují nulou. Neúplné roky se vynechávají.
+Spojovací klíč: kód kraje a rok. Kontrola vztahu jedna ku jedné.
+Hosté představují příjezdy do ubytovacích zařízení, nikoli unikátní lidi.
+Korelace mezi kraji neprokazuje, že turisté způsobují nehody.
+
+ZDROJE
+Nehody v silniční dopravě. ČSÚ, původní údaje Policie ČR.
+https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00025593/f40915f844c6fd08ef62b0550119718c
+https://data.csu.gov.cz/opendata/sady/KRI05/distribuce/csv
+
+Návštěvnost hromadných ubytovacích zařízení, měsíční data. ČSÚ.
+https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00025593/a343c97c19bfae9bc943d0b28a089599
+https://data.csu.gov.cz/opendata/sady/CRU02M/distribuce/csv
